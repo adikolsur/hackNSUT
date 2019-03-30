@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SOS</title>
+</head>
+<body>
+<form action="{% url 'sms:send' %}" method="get">
+    <input type="submit" value="Send">
+</form>
+</body>
+</html>
